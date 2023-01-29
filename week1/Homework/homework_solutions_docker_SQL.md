@@ -7,7 +7,7 @@ After running the following command:
 docker build --help
 ```
 
-Answer: **iidfile string** has the text *Write the image ID to the file*
+Answer: **-iidfile string** has the text *Write the image ID to the file*
 
 ## Question 2. Understanding docker first run
 Run docker with the python:3.9 image in an interactive mode and the entrypoint of bash. Now check the python modules that are installed ( use pip list). How many python packages/modules are installed?
@@ -23,7 +23,7 @@ setuptools 58.1.0
 wheel      0.38.4
 ```
 
-Answer: **3 modules** installed
+Answer: **3** modules installed
 
 ## Prepare Postgres
 To starting docker compose with postgres and pgadmin 
