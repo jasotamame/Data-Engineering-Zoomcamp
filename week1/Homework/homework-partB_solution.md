@@ -9,7 +9,7 @@ Paste the output of this command into the homework submission form.
 
 Command:
 ```
-terraform apply -var="project=dtc-terraform"
+(base) angel@Angels-MacBook-Pro terraform % terraform apply -var="project=dtc-terraform"
 ```
 
 Output:
@@ -28,7 +28,7 @@ Terraform will perform the following actions:
       + id                         = (known after apply)
       + labels                     = (known after apply)
       + last_modified_time         = (known after apply)
-      + location                   = "europe-west1-b"
+      + location                   = "europe-west6"
       + project                    = "dtc-terraform"
       + self_link                  = (known after apply)
 
@@ -66,7 +66,7 @@ Terraform will perform the following actions:
   + resource "google_storage_bucket" "data-lake-bucket" {
       + force_destroy               = true
       + id                          = (known after apply)
-      + location                    = "EUROPE-WEST1-B"
+      + location                    = "EUROPE-WEST6"
       + name                        = "dtc_data_lake_dtc-terraform"
       + project                     = (known after apply)
       + public_access_prevention    = (known after apply)
@@ -100,4 +100,17 @@ Terraform will perform the following actions:
     }
 
 Plan: 2 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+google_bigquery_dataset.dataset: Creating...
+google_storage_bucket.data-lake-bucket: Creating...
+google_storage_bucket.data-lake-bucket: Creation complete after 1s [id=dtc_data_lake_dtc-terraform]
+google_bigquery_dataset.dataset: Creation complete after 1s [id=projects/dtc-terraform/datasets/trips_data_all]
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
