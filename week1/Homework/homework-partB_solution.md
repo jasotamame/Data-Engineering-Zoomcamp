@@ -8,11 +8,13 @@ terraform apply
 Paste the output of this command into the homework submission form.
 
 Command:
-```terraform apply -var="project=dtc-de-375514"
+```
+terraform apply -var="project=dtc-de-375514"
 ```
 
 Output:
-```Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+```
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
 
 Terraform will perform the following actions:
