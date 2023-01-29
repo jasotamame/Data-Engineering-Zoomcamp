@@ -9,7 +9,7 @@ Paste the output of this command into the homework submission form.
 
 Command:
 ```
-terraform apply -var="project=dtc-de-375514"
+terraform apply -var="project=dtc-terraform"
 ```
 
 Output:
