@@ -6,11 +6,12 @@ Using the etl_web_to_gcs.py flow that loads taxi data into GCS as a guide, creat
 
 How many rows does that dataset have?
 
+```
 - 447,770
 - 766,792
 - 299,234
 - 822,132
-
+```
 
 The answer is **447,770**
 
@@ -64,9 +65,10 @@ Using the flow in etl_web_to_gcs.py, create a deployment to run on the first of 
 - * * 5 1 0
 ```
 
+```
 The answer is **(0 5 1 * *)**
 We need to go to Prefect > Deployments > Parameterized ETL2 > Add schedule > Value -0 5 1 * *-
-
+```
 
 ### Question 3. Loading data to BigQuery
 Using etl_gcs_to_bq.py as a starting point, modify the script for extracting data from GCS and loading it into BigQuery. This new script should not fill or remove rows with missing values. (The script is really just doing the E and L parts of ETL).
