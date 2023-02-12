@@ -62,7 +62,7 @@ Using the flow in etl_web_to_gcs.py, create a deployment to run on the first of 
 - 5 * 1 0 *
 - * * 5 1 0
 
-The answer is **-0 5 1 * *-**
+The answer is **(0 5 1 * *)**
 We need to go to Prefect > Deployments > Parameterized ETL2 > Add schedule > Value -0 5 1 * *-
 
 
