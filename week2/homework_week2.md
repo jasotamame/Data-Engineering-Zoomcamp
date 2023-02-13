@@ -73,9 +73,9 @@ We need to go to Prefect > Deployments > Parameterized ETL2 > Add schedule > Val
 ### Question 3. Loading data to BigQuery
 Using etl_gcs_to_bq.py as a starting point, modify the script for extracting data from GCS and loading it into BigQuery. This new script should not fill or remove rows with missing values. (The script is really just doing the E and L parts of ETL).
 
-The main flow should print the total number of rows processed by the script. Set the flow decorator to log the print statement.
+<!-- The main flow should print the total number of rows processed by the script. Set the flow decorator to log the print statement. -->
 
-Parametrize the entrypoint flow to accept a list of months, a year, and a taxi color.
+<!-- Parametrize the entrypoint flow to accept a list of months, a year, and a taxi color. -->
 
 Make any other necessary changes to the code for it to function as required.
 
